@@ -171,9 +171,9 @@ PLATFORMS
 
 DEPENDENCIES
   active_storage_cacheable!
-  bundler (~> 1.17)
-  rake (>= 12.3.3)
-  test-unit-rails (~> 5.0)
+  bundler
+  rake
+  test-unit-rails
 
 BUNDLED WITH
    1.17.2
