@@ -1,4 +1,7 @@
 ---
+env:
+  global:
+    - CC_TEST_REPORTER_ID=d4b471fddb5a499e0c606f3a80c5027cc147e8dfa8c21798fcea4a19833f7483
 language: ruby
 cache: bundler
 
@@ -7,3 +10,6 @@ before_install:
 
 rvm:
   - 2.6.1
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
