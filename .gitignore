@@ -13,4 +13,4 @@
 .idea/
 .rakeTasks
 
-# /vendor/bundle
+/vendor
