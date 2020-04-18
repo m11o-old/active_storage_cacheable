@@ -1,5 +1,4 @@
 ---
-sudo: false
 language: ruby
 cache: bundler
 
@@ -8,3 +7,7 @@ before_install:
 
 rvm:
   - 2.6.1
+
+script:
+  - bundle -v
+  - bundle list rake
