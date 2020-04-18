@@ -1,7 +1,7 @@
 ---
 sudo: false
 language: ruby
-#cache: bundler
+cache: bundler
 
 before_install:
   - gem install bundler -v '<2'
