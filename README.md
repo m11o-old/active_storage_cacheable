@@ -1,6 +1,8 @@
 # ActiveStorageCacheable
 
 [![Build Status](https://travis-ci.org/m11o/active_storage_cacheable.svg?branch=master)](https://travis-ci.org/m11o/active_storage_cacheable)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5ebba5659c13c7d3bc71/maintainability)](https://codeclimate.com/github/m11o/active_storage_cacheable/maintainability)
+[![codecov](https://codecov.io/gh/m11o/active_storage_cacheable/branch/master/graph/badge.svg)](https://codecov.io/gh/m11o/active_storage_cacheable)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/active_storage_cacheable`. To experiment with that code, run `bin/console` for an interactive prompt.
 
