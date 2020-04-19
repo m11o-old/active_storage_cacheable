@@ -15,4 +15,4 @@
 
 /vendor
 /test/tmp
-/log/**/*.log
+/test/log/**/*.log
