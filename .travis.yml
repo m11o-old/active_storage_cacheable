@@ -1,0 +1,12 @@
+---
+env:
+  global:
+    - secure: ECIDFYUsFxQksRHwB6NEda25dtf7iUra27fLZ/LDR7FV0KD7SjFHHHPKlblm5RrIwB3LwcLLxL11A+KImY/SL3gnwLiX9evQH2i9XCrS6Toq3OUXHq+FNoeijfzoMjDXZ5YKhnucqKdNSRo/AGUcT3DH2rO7lKZGqAozgNF0f3efo3CpU/tYi9qFBRUgh1dyIzaEQrixVFE182BBpDWfVzkQPSmqSAK1gNaTDfaihnLcQuLivmuy4b45o4l25yRcKYPH+vFvDSsr++sngHVQVwfMvA9p11vnRMHg18NcOy+RTvvfuF5AvTg5FPiY17q0j1qfUieUFu4nfw0rq0maIYBTjCl/Ac2lCrnzZDDIloFe+Z8heifKrfXrP+SpwhnQ/I472nDKYuOsAelEfeWbdElst9/KcBHB7GDwlJNq+0Z+2wZyaGzqimo5Ug+e8jCpxAK/vkkxxUpCUUalRJ1F7ASAvLxCfa43RNvDs9/vpC9r22HTUV9K07gFkDWPVY+R5oLGuNUYwn27UnqxV/7b3asb7xpld2kR+a8ITHFEMTjmraAwMR2aeDjDEXwymJpfmNxQsIUCnDKs7aHn5aKOM/316b/kbYcQ4M8WQl5xaQOrtuSU5nyTNkWOCge5+eBGegvuB3BjhcP3WnbEpjg8kwrQThV/2sqG17KujA2Yst4=
+language: ruby
+cache: bundler
+
+before_install:
+  - gem install bundler -v '<2'
+
+rvm:
+  - 2.6.1
