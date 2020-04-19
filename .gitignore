@@ -14,3 +14,5 @@
 .rakeTasks
 
 /vendor
+/test/tmp
+/log/**/*.log
