@@ -10,6 +10,7 @@ module ActiveStorageCacheableTestApp
   class Application < ::Rails::Application
     config.eager_load = false
     config.root = File.dirname(__FILE__)
+    config.active_storage.service = :test
   end
 end
 ActiveStorageCacheableTestApp::Application.initialize!
@@ -24,7 +25,6 @@ class CreateUserTables < ActiveRecord::VERSION::MAJOR >= 5 ? ActiveRecord::Migra
       t.string   :filename,     null: false
       t.string   :content_type
       t.text     :metadata
-      t.string   :service_name, null: false
       t.bigint   :byte_size,    null: false
       t.string   :checksum,     null: false
       t.datetime :created_at,   null: false
@@ -48,4 +48,11 @@ end
 class User < ActiveRecord::Base
   has_one_attached :avatar
   has_many_attached :images
+end
+
+def attach_avatar(user)
+  user.avatar.attach(
+    io: File.open(Rails.root.join('assets', 'images', '200x200.png')),
+    filename: '200x200.png'
+  )
 end
