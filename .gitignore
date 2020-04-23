@@ -6,6 +6,7 @@
 /pkg/
 /spec/reports/
 /tmp/
+/log/
 
 .ruby-version
 
@@ -14,3 +15,5 @@
 .rakeTasks
 
 /vendor
+/test/tmp
+/test/log/**/*.log
